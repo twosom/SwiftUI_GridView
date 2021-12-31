@@ -30,7 +30,12 @@ struct GridTypePicker: View {
 
             }
             .pickerStyle(.segmented)
+        .eraseToAnyView()
     }
+
+    #if DEBUG
+    @ObservedObject var iO = injectionObserver
+    #endif
 
 }
 

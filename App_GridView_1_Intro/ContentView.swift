@@ -45,9 +45,15 @@ struct ContentView: View {
             ScrollView {
                 LazyVGrid(columns: selectedGridType.columns) {
                     ForEach(items) { item in
-                        Image(item.imageName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
+                        switch selectedGridType {
+                        case .SINGLE, .DOUBLE:
+                            SingleRowLayout(item: item)
+                        default:
+                            Image(item.imageName)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                        }
+
                     }
                 }
                     .animation(.easeInOut(duration: 0.5))

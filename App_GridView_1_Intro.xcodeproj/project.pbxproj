@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5CCE90E936581F61789A4487 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE9AC60AA538842EA73339 /* Item.swift */; };
 		5CCE9541FC7C0B9430D80CE6 /* GridTypePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE9EBD0968C6EBD56E52C9 /* GridTypePicker.swift */; };
+		5CCE9792F3B4079274D063B3 /* SingleRowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE97BD80F8F70AB09253FE /* SingleRowLayout.swift */; };
 		5CCE9A13244BF930AEF5B2FE /* App_GridView_1_IntroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE9E45562561547449A848 /* App_GridView_1_IntroApp.swift */; };
 		5CCE9D538C9CE320B9801CFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CCE91E10231E8EDC969DA4B /* Assets.xcassets */; };
 		5CCE9ED81F20D3A215E0B9C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CCE964C99132489B7BCEA5B /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		5CCE91E10231E8EDC969DA4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CCE93533A8626173BC704EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5CCE964C99132489B7BCEA5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CCE97BD80F8F70AB09253FE /* SingleRowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleRowLayout.swift; sourceTree = "<group>"; };
 		5CCE9AC60AA538842EA73339 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5CCE9E45562561547449A848 /* App_GridView_1_IntroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_GridView_1_IntroApp.swift; sourceTree = "<group>"; };
 		5CCE9EBD0968C6EBD56E52C9 /* GridTypePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTypePicker.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 				5CCE93533A8626173BC704EA /* ContentView.swift */,
 				5CCE9EBD0968C6EBD56E52C9 /* GridTypePicker.swift */,
 				5CCE9AC60AA538842EA73339 /* Item.swift */,
+				5CCE97BD80F8F70AB09253FE /* SingleRowLayout.swift */,
 			);
 			path = App_GridView_1_Intro;
 			sourceTree = "<group>";
@@ -98,11 +101,20 @@
 /* Begin PBXProject section */
 		5CCE986EC77C4FDB2397A1AA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					5CCE967F3F7D56CED03B3E38 = {
+						DevelopmentTeam = YCY2X96LYD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
 			buildConfigurationList = 5CCE99A66B7AEC292D74ECD2 /* Build configuration list for PBXProject "App_GridView_1_Intro" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 5CCE97415F6D431C2D423FA3;
@@ -136,6 +148,7 @@
 				5CCE9F2E52D156A1E0D5ADC8 /* ContentView.swift in Sources */,
 				5CCE9541FC7C0B9430D80CE6 /* GridTypePicker.swift in Sources */,
 				5CCE90E936581F61789A4487 /* Item.swift in Sources */,
+				5CCE9792F3B4079274D063B3 /* SingleRowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +160,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"App_GridView_1_Intro/Preview Content\"";
+				DEVELOPMENT_TEAM = YCY2X96LYD;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -167,8 +183,9 @@
 					"-Xlinker",
 					dynamic_lookup,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud.App-GridView-1-Intro";
+				PRODUCT_BUNDLE_IDENTIFIER = "lab.gravy.App-GridView-1-Intro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -250,8 +267,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"App_GridView_1_Intro/Preview Content\"";
+				DEVELOPMENT_TEAM = YCY2X96LYD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -261,8 +281,9 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud.App-GridView-1-Intro";
+				PRODUCT_BUNDLE_IDENTIFIER = "lab.gravy.App-GridView-1-Intro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -318,8 +339,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -334,6 +354,7 @@
 				5CCE96C8BAF0139F1ABED332 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		5CCE99A66B7AEC292D74ECD2 /* Build configuration list for PBXProject "App_GridView_1_Intro" */ = {
 			isa = XCConfigurationList;
@@ -342,7 +363,7 @@
 				5CCE9B4EA7DCC3788B9F99D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
