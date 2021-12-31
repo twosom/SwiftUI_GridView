@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5CCE967F3F7D56CED03B3E38"
+               BuildableName = "App_GridView_1_Intro.app"
+               BlueprintName = "App_GridView_1_Intro"
+               ReferencedContainer = "container:App_GridView_1_Intro.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5CCE967F3F7D56CED03B3E38"
+            BuildableName = "App_GridView_1_Intro.app"
+            BlueprintName = "App_GridView_1_Intro"
+            ReferencedContainer = "container:App_GridView_1_Intro.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
