@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CCE90E936581F61789A4487 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE9AC60AA538842EA73339 /* Item.swift */; };
+		5CCE9541FC7C0B9430D80CE6 /* GridTypePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE9EBD0968C6EBD56E52C9 /* GridTypePicker.swift */; };
 		5CCE9A13244BF930AEF5B2FE /* App_GridView_1_IntroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE9E45562561547449A848 /* App_GridView_1_IntroApp.swift */; };
 		5CCE9D538C9CE320B9801CFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CCE91E10231E8EDC969DA4B /* Assets.xcassets */; };
 		5CCE9ED81F20D3A215E0B9C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CCE964C99132489B7BCEA5B /* Preview Assets.xcassets */; };
@@ -17,7 +19,9 @@
 		5CCE91E10231E8EDC969DA4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CCE93533A8626173BC704EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5CCE964C99132489B7BCEA5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CCE9AC60AA538842EA73339 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5CCE9E45562561547449A848 /* App_GridView_1_IntroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_GridView_1_IntroApp.swift; sourceTree = "<group>"; };
+		5CCE9EBD0968C6EBD56E52C9 /* GridTypePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridTypePicker.swift; sourceTree = "<group>"; };
 		5CCE9FAFEF0BE0DEA753F0FC /* App_GridView_1_Intro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_GridView_1_Intro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -39,6 +43,8 @@
 				5CCE954816FAD13B700A651E /* Preview Content */,
 				5CCE9E45562561547449A848 /* App_GridView_1_IntroApp.swift */,
 				5CCE93533A8626173BC704EA /* ContentView.swift */,
+				5CCE9EBD0968C6EBD56E52C9 /* GridTypePicker.swift */,
+				5CCE9AC60AA538842EA73339 /* Item.swift */,
 			);
 			path = App_GridView_1_Intro;
 			sourceTree = "<group>";
@@ -128,6 +134,8 @@
 			files = (
 				5CCE9A13244BF930AEF5B2FE /* App_GridView_1_IntroApp.swift in Sources */,
 				5CCE9F2E52D156A1E0D5ADC8 /* ContentView.swift in Sources */,
+				5CCE9541FC7C0B9430D80CE6 /* GridTypePicker.swift in Sources */,
+				5CCE90E936581F61789A4487 /* Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,19 +145,11 @@
 		5CCE935D9071DE6333D1F7D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-                OTHER_LDFLAGS = (
-                    "-Xlinker",
-                    "-interposable",
-                    "-Xlinker",
-                    "-undefined",
-                    "-Xlinker",
-                    dynamic_lookup,
-                );
-                ENABLE_BITCODE = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"App_GridView_1_Intro/Preview Content\"";
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -159,6 +159,14 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+					"-Xlinker",
+					"-undefined",
+					"-Xlinker",
+					dynamic_lookup,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud.App-GridView-1-Intro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -170,15 +178,6 @@
 		5CCE95D3C23FD064FAE39E80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-                OTHER_LDFLAGS = (
-                    "-Xlinker",
-                    "-interposable",
-                    "-Xlinker",
-                    "-undefined",
-                    "-Xlinker",
-                    dynamic_lookup,
-                );
-                ENABLE_BITCODE = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -211,6 +210,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -231,6 +231,14 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+					"-Xlinker",
+					"-undefined",
+					"-Xlinker",
+					dynamic_lookup,
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
